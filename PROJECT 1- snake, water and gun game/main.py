@@ -1,4 +1,6 @@
 import random
+
+"GAME"
 '''
 1 for snake s
 -1 for water w
