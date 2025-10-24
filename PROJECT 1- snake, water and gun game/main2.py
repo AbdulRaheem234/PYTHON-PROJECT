@@ -1,4 +1,6 @@
 import random
+
+
 def snake_water_gun():
     print("Welcome to Snake Water Gun Game!")
     print("Rules:\nSnake drinks Water\nWater drowns Gun\nGun kills Snake")
@@ -18,7 +20,7 @@ def snake_water_gun():
                 break
             if user_choice not in [1, 2, 3]:
                 print("Invalid input! Please enter 1, 2, 3, or 4.")
-                continue  
+                continue
             user = choices[user_choice - 1]
             computer = random.choice(choices)
             print(f"\nYou chose: {user}")
@@ -33,10 +35,13 @@ def snake_water_gun():
                 user_score += 1
             else:
                 print("Computer wins this round!")
-                comp_score += 1   
+                comp_score += 1
             rounds += 1
-            print(f"\nScore after {rounds} rounds: You {user_score} - {comp_score} Computer") 
+            print(
+                f"\nScore after {rounds} rounds: You {user_score} - {comp_score} Computer")
         except ValueError:
             print("Please enter a valid number!")
+
+
 # Start the game
 snake_water_gun()
